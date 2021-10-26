@@ -208,7 +208,7 @@ export default {
 }
 .btn-1 {
   margin: 2rem 0 0 5rem;
-  color: #fff;
+  color: #fff !important;
   background-color: #3BD6B2 !important;
   font-family: Axiforma;
   font-style: normal;
@@ -289,17 +289,17 @@ color: #38405C;
   width: 471px;
 }
 .btn-2{
-    color: #fff;
-  background-color: #3BD6B2 !important;
-  font-family: 'Axiforma';
-  font-style: normal;
-  font-size: 16px;
-  line-height: 26px;
-  text-transform: capitalize;
-  text-align: center;
-  opacity: 0.8;
-  border-radius: 10px;
-  /* transform: matrix(0.76, -0.57, 0.73, 0.77, 0, 0); */
+    color: #fff !important;
+    background-color: #3BD6B2 !important;
+    font-family: 'Axiforma';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    text-align: center;
+    opacity: 0.8;
+    border-radius: 10px;
+    /* transform: matrix(0.76, -0.57, 0.73, 0.77, 0, 0); */
 }
 .business{
   margin:  10rem 0 0 15rem;
@@ -383,7 +383,7 @@ color: #38405C;
   font-family: 'Axiforma';
   font-style: normal;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   opacity: 0.8;
   /* width: 20%; */
   margin: 0 auto;
