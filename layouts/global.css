@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Axiforma";
+    src: local("Axiforma"),
+     url(~assets/Axiforma/Axiforma.ttf) format("truetype");
+}
+
+html {
+    font-family: "Axiforma";
+}
