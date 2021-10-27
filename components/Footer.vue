@@ -90,11 +90,16 @@
       text-align: center;
       height: auto;
       width: 100%;
-      margin: 0;
-     
-      min-width: 480px;
-    /* width: 1000px; */
-    /* margin-top: 10rem; */
+      padding: 0;
+  }
+  .footer-logo{
+      margin: 0 0 0 1rem;
+  }
+  .footer-icons{
+      margin: 0 1rem;
+  }
+  .rights-reserve{
+      margin: 0 auto;
   }
 }
 

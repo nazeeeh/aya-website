@@ -34,7 +34,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <div class="row-reversedss">
+      <div class="row-reversed">
         <v-col lg="6" md="8" sm="12">
         <img
           class="left-section-image"
@@ -79,7 +79,7 @@
             <h3 class="sub-head-text">
               Freelancers:
             </h3>
-            <p class="p-text-3">
+            <p class="p-text-3 showcase">
               Showcase your skills to the world, get 
               matched with both local and international 
               companies and get paid, all hassle-free.
@@ -96,7 +96,7 @@
             <h3 class="sub-head-text">
               Businesses:
             </h3>
-            <p class="p-text-3">
+            <p class="p-text-3 access">
               Access the best and largest pool of African freelancers 
               to take your business to the next level, enjoy instant and
                borderless peer-to-peer cryptocurrency payments with 100% 
@@ -160,7 +160,6 @@
             <div class="bbtn">
                <v-btn class="btn-3" depressed x-large>Get access</v-btn>
             </div>
-            
           </div>
         </v-col>
       </v-row>
@@ -425,6 +424,7 @@ color: #38405C;
   }
   .p-text{
     font-size: 18px;
+    width: 350px;
   }
   .btn-1 {
     margin: 2rem 0 0 1rem;
@@ -439,26 +439,30 @@ color: #38405C;
     width: 430px;
     height: 600px;
   }
-  
   .grafiti{
-    border: 1px soild red;
-    margin: 0 0 0 5rem;
-    /* display: none; */
-    width: 500px;
+    margin: 0 0 0 2rem;
+    width: 370px;
+  }
+  .second-section{
+    margin: 0 0 3rem 1rem;
   }
   .sub-heading-text{
-    width: 450px;
+    font-size: 30px;
+    width: 400px;
   }
   .paragraph-2{
-    width: 454px;
+    margin: 0 1rem 5rem 1rem;
+    width: 350px;
   }
   .left-section-image{
-    width: 480px;
-    height: 500px;
+    width: 380px;
+    height: auto;
     margin-top: 4rem;
   }
   .bg{
-    width: 480px;
+    margin: 0 auto;
+    width: 100%;
+   
   }
   .third-section{
     position: absolute;
@@ -467,52 +471,79 @@ color: #38405C;
     left: 5%;
   }
   .freelancers{
-    margin: 15rem 0 0 3rem;
-    width: 100%;
+    margin: 15rem 0 0 -200px;
+    /* width: 100%; */
   }
   .sub-head-text{
     font-size: 20px;
+    width: 100%;
+  }
+  .showcase{
+    font-size: 14px;
+    width: 100%;
   }
   .p-text-3{
     font-size: 14px;
+    /* width: 100%; */
   }
   .business-image{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 30%;
   }
   .business{
-    margin:  20rem 0 0 3rem;
-    width: 5%;
+    margin:  15rem 0 0 0;
+  }
+  .access{
+    font-size: 14px;
+    width: 100%;
   }
   .fourth-section{
-    margin: 0 2rem;
+    margin: 6rem 0 0 0;
+  }
+  .sub-header-fourth{
+    font-size: 30px;
+    width: 400px;
+    margin: 0 0 0 1rem;
+  }
+  .p-text-4{
+    font-size: 18px;
+    width: 350px;
+    margin: 2rem auto;
+  }
+  .form{
+    margin: 0 0 0 1rem;
   }
   .input-box{
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
   }
   .fourth-image{
     margin-top: 5rem;
-    width: 480px;
-    height: 500px;
+    width: 100%;
+    height: auto;
   }
   .fifth-section{
-  /* border: 1px solid red; */
+    padding: 60px;
   background-size: cover;
-  height: 800px;
-  width: 480px; 
-
-  /* min-height: 100%;
-  min-width: 1024px; */
-  /* padding: 20rem 20rem; */
-  margin: 10rem auto 0 auto;
+  height: auto;
+  width: 100%; 
+  margin: 10rem 0 0 0;
   background-repeat: no-repeat;
 }
   .p-text-5{
+    font-size: 18px;
     width: 276px;
+    margin: 50px auto 50px auto;
+    /* padding: 30px; */
+    /* margin-bottom: 0; */
   }
+  /* .btn-3{
+    margin-top: 4rem;
+  } */
   .eclipse{
     width: 20px;
+    margin: 5rem 0 5rem 3rem;
   }
 }
 @media (max-width: 480px) {

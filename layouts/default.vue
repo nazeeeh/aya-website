@@ -29,7 +29,6 @@ export default {
   box-sizing: border-box;
 }
 .container{
-  border: 1px solid red;
   width: 100%;
 }
 </style>
