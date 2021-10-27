@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row>
-       <v-col>
+       <v-col lg="6" md="8" sm="12">
         <AyaLogo />
          <div class="text-section">
           <h3 class="header-text">
@@ -23,25 +23,28 @@
             alt="orbit">
          </div>
        </v-col>
-      <v-col>
-        <img
-        class="header-image" 
-         src="/image_001.png" 
-         alt="image"
+      <v-col lg="6" md="8" sm="12">
+        <div class="header-img">
+          <img
+            class="header-image" 
+            src="/image_001.png" 
+            alt="image"
          />
+        </div>
       </v-col>
     </v-row>
     <v-row>
-      <v-col lg="6">
+      <div class="row-reverse">
+        <v-col lg="6" md="8" sm="12">
         <img
           class="left-section-image"
           src="/image_002.png" 
           alt="image"
           />
       </v-col>
-      <v-col lg="6">
+      <v-col lg="6" md="8" sm="12">
         <img
-        class="mx-6" 
+          class="grafiti mx-6 " 
           src="/artifact.svg" 
           alt="image"
         />
@@ -58,6 +61,7 @@
             </p>
           </div>
       </v-col>
+      </div>
     </v-row>
     <div class="bg mt-8" :style="{backgroundImage: `url(${backgroundImg})`}">
       <v-row>
@@ -394,5 +398,55 @@ color: #38405C;
 }
 .eclipse{
   margin: 2rem 0 0 15rem;
+}
+
+/* Mobile screen Responsitivity */
+@media (max-width: 480px){
+  .text-section{
+    margin: 5rem 0 2rem 5rem;
+    width: 100%;
+  }
+  .header-text{
+    width: 340px;
+  }
+  .orbit{
+    position: absolute;
+    top: 200px;
+    left: 40px;
+  }
+  .paragraph{
+    margin: 0 0 0 5rem;
+    width: 350px;
+  }
+  .header-img{
+    margin-top: 5rem;
+    padding: 0;
+  }
+  .header-image{
+    margin-left: -55px;
+    width: 600px;
+    height: 920px;
+  }
+  .row-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .grafiti{
+    border: 1px soild red;
+    margin: 0 0 0 5rem;
+    /* display: none; */
+    width: 500px;
+  }
+  .sub-heading-text{
+    Width: 450px;
+  }
+  .paragraph-2{
+    width: 454px;
+  }
+  .left-section-image{
+    width: 600px;
+    height: 600px;
+    margin-top: 4rem;
+  }
 }
 </style>
