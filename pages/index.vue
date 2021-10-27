@@ -424,8 +424,8 @@ color: #38405C;
   }
   .header-image{
     margin-left: -55px;
-    width: 600px;
-    height: 920px;
+    width: 540px;
+    height: 600px;
   }
   .row-reverse{
     display: flex;
@@ -444,9 +444,12 @@ color: #38405C;
     width: 454px;
   }
   .left-section-image{
-    width: 600px;
-    height: 600px;
+    width: 480px;
+    height: 500px;
     margin-top: 4rem;
+  }
+  .bg{
+    width: 480px;
   }
 }
 </style>
