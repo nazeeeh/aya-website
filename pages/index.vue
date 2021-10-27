@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row justify="center" align="center">
+    <v-row >
        <v-col lg="6" md="8" sm="12">
         <AyaLogo />
          <div class="text-section">
@@ -33,8 +33,8 @@
         </div>
       </v-col>
     </v-row>
-    <v-row>
-      <div class="row-reversed">
+    <div class="reversed">
+      <v-row>
         <v-col lg="6" md="8" sm="12">
         <img
           class="left-section-image"
@@ -61,8 +61,10 @@
             </p>
           </div>
       </v-col>
-      </div>
     </v-row>
+
+    </div>
+    
     <div class="bg mt-8" :style="{backgroundImage: `url(${backgroundImg})`}">
       <v-row>
         <v-col>
@@ -232,6 +234,10 @@ export default {
   width: 700px;
   height: 922px;
 }
+.reversed{
+  width: 100%;
+  margin-bottom: 10rem;
+}
 .left-section-image{
   width: 650px;
   height: 650px;
@@ -397,14 +403,13 @@ color: #38405C;
 }
 .eclipse{
   margin: 2rem 0 0 15rem;
+  width: 20px;
 }
 
 /* Mobile screen Responsitivity */
 @media (max-width: 480px){
   .text-section{
-    
     margin: 5rem 0 2rem 1rem;
-  
   }
   .header-text{
     /* width: 260px; */
@@ -547,7 +552,7 @@ color: #38405C;
   }
 }
 @media (max-width: 480px) {
-    .row-reverse{
+    .reversed{
     display: flex;
     flex-direction: column-reverse;
   }
