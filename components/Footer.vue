@@ -2,28 +2,34 @@
  <div class="footer">
   <div>
     <v-row>
-     <v-col>
+     <v-col lg="3" md="3" sm="12">
+      <div>
         <img
          class="footer-logo" 
          src="~/assets/Images/logo.svg" 
          alt="logo"
         />
+      </div>
      </v-col>
-     <v-col>
-         <p class="footer-text mt-10">Terms and Conditions</p>
+     <v-col lg="3" md="3" sm="12">
+      <div>
+        <p class="footer-text mt-10">Terms and Conditions</p>
+      </div>
      </v-col>
-     <v-col>
-         <p class="footer-text mt-10">Privacy Policy</p>
+     <v-col lg="3" md="3" sm="12">
+      <div>
+        <p class="footer-text mt-10">Privacy Policy</p>
+      </div>
      </v-col>
-     <v-col>
+     <v-col lg="3" md="3" sm="12">
          <div class="footer-icons mt-4">
-             <a href="">
+             <a href="https://twitter.com/ayagigs">
                 <img src="~/assets/Images/Twitter.png" alt="icon">
              </a>
-             <a href="">
+             <a href="http://web.facebook.com/myayagigs">
                 <img src="~/assets/Images/Facebook.png" alt="icon">
              </a>
-             <a href="">
+             <a href="https://www.linkedin.com/company/ayagigs/">
                 <img src="~/assets/Images/Linkedin.png" alt="icon">
              </a>
              <a href="">
@@ -47,7 +53,8 @@
 <style scoped>
 .footer{
     background-color: #0080FA;
-    width: 100%;
+    max-width: 1440px;
+    /* width: 100%; */
     height: 250px;
     padding: 4rem 5rem;
     margin-top: 5rem;
@@ -76,4 +83,19 @@
     text-align: center;
     color: #FFFFFF;
 }
+
+/* Mobile responsiveness */
+@media(max-width: 480px){
+  .footer{
+      text-align: center;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      border: 1px solid red;
+      min-width: 480px;
+    /* width: 1000px; */
+    /* margin-top: 10rem; */
+  }
+}
+
 </style>

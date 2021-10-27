@@ -34,7 +34,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <div class="row-reverse">
+      <div class="row-reversedss">
         <v-col lg="6" md="8" sm="12">
         <img
           class="left-section-image"
@@ -427,10 +427,7 @@ color: #38405C;
     width: 540px;
     height: 600px;
   }
-  .row-reverse{
-    display: flex;
-    flex-direction: column-reverse;
-  }
+  
   .grafiti{
     border: 1px soild red;
     margin: 0 0 0 5rem;
@@ -438,7 +435,7 @@ color: #38405C;
     width: 500px;
   }
   .sub-heading-text{
-    Width: 450px;
+    width: 450px;
   }
   .paragraph-2{
     width: 454px;
@@ -451,5 +448,65 @@ color: #38405C;
   .bg{
     width: 480px;
   }
+  .third-section{
+    position: absolute;
+    width: 20%;
+    top: -7%;
+    left: 5%;
+  }
+  .freelancers{
+    margin: 15rem 0 0 3rem;
+    width: 100%;
+  }
+  .sub-head-text{
+    font-size: 20px;
+  }
+  .p-text-3{
+    font-size: 14px;
+  }
+  .business-image{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+  .business{
+    margin:  20rem 0 0 3rem;
+    width: 5%;
+  }
+  .fourth-section{
+    margin: 0 2rem;
+  }
+  .input-box{
+    width: 100%;
+  }
+  .fourth-image{
+    margin-top: 5rem;
+    width: 480px;
+    height: 500px;
+  }
+  .fifth-section{
+  /* border: 1px solid red; */
+  background-size: cover;
+  height: 800px;
+  width: 480px; 
+
+  /* min-height: 100%;
+  min-width: 1024px; */
+  /* padding: 20rem 20rem; */
+  margin: 10rem auto 0 auto;
+  background-repeat: no-repeat;
 }
+  .p-text-5{
+    width: 276px;
+  }
+  .eclipse{
+    width: 20px;
+  }
+}
+@media (max-width: 480px) {
+    .row-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  }
 </style>
