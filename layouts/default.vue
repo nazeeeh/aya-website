@@ -2,7 +2,7 @@
   <v-app>
     
     <v-main>
-      <v-container fluid class="pa-0">
+      <v-container fluid class="pa-0 container">
         <Nuxt />
       </v-container>
     </v-main>
@@ -27,5 +27,9 @@ export default {
 
 *, *::after, *::before{
   box-sizing: border-box;
+}
+.container{
+  border: 1px solid red;
+  width: 100%;
 }
 </style>

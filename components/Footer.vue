@@ -91,7 +91,7 @@
       height: auto;
       width: 100%;
       margin: 0;
-      border: 1px solid red;
+     
       min-width: 480px;
     /* width: 1000px; */
     /* margin-top: 10rem; */

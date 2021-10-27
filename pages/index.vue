@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row>
+    <v-row justify="center" align="center">
        <v-col lg="6" md="8" sm="12">
         <AyaLogo />
          <div class="text-section">
@@ -403,28 +403,40 @@ color: #38405C;
 /* Mobile screen Responsitivity */
 @media (max-width: 480px){
   .text-section{
-    margin: 5rem 0 2rem 5rem;
-    width: 100%;
+    
+    margin: 5rem 0 2rem 1rem;
+  
   }
   .header-text{
-    width: 340px;
+    /* width: 260px; */
+    font-size: 32px;
   }
   .orbit{
     position: absolute;
-    top: 200px;
-    left: 40px;
+    top: 170px;
+    left: 150px; 
+  }
+  .orbit-image{
+    width: 200px;
   }
   .paragraph{
-    margin: 0 0 0 5rem;
-    width: 350px;
+    margin: 0 auto;
+    width: 350px; 
+  }
+  .p-text{
+    font-size: 18px;
+  }
+  .btn-1 {
+    margin: 2rem 0 0 1rem;
   }
   .header-img{
     margin-top: 5rem;
     padding: 0;
+    text-align: center;
   }
   .header-image{
     margin-left: -55px;
-    width: 540px;
+    width: 430px;
     height: 600px;
   }
   
