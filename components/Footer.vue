@@ -53,11 +53,12 @@
 <style scoped>
 .footer{
     background-color: #0080FA;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     /* width: 100%; */
     height: 250px;
     padding: 4rem 5rem;
     margin-top: 5rem;
+    width: 100%;
 }
 .footer-text{
     font-family: 'Axiforma';
@@ -101,6 +102,19 @@
   .rights-reserve{
       margin: 0 auto;
   }
+}
+
+/* medium and larger screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer{
+      text-align: center;
+      height: auto;
+      width: 100%;
+  }
+  .footer-logo{
+    margin: 0 0 0 0;
+  }
+
 }
 
 </style>

@@ -28,7 +28,7 @@ export default {
 *, *::after, *::before{
   box-sizing: border-box;
 }
-.container{
-  width: 100%;
-}
+/* .container{
+  
+} */
 </style>

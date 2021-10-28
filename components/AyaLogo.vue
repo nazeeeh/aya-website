@@ -20,4 +20,10 @@
   }
   
 }
+/* medium and larger screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ayalogo{
+    margin: 3rem 0 0 2rem ;
+  }
+}
 </style>
