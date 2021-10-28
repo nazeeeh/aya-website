@@ -1,7 +1,7 @@
 <template>
   <div>
-     
-    <v-row >
+    <div class="first-section">
+      <v-row >
        <v-col cols="12" md="6">
         <AyaLogo />
          <div class="text-section">
@@ -66,14 +66,18 @@
         </div>
       </v-col>
     </v-row>
+    </div>
+    
     <div class="reversed">
       <v-row>
-        <v-col lg="6" md="8" sm="12">
-        <img
-          class="left-section-image"
-          src="/image_002.png" 
-          alt="image"
+        <v-col lg="6" md="6" sm="12">
+          <div class="left-img">
+            <img
+            class="left-section-image"
+            src="/image_002.png" 
+            alt="image"
           />
+          </div>
       </v-col>
       <v-col lg="6" md="6" sm="12">
         <img
@@ -152,10 +156,12 @@
         </v-col>
       </v-row>
     </div>
+
+    <div class="fourth-section">
     <v-row>
-      <v-col>
-         <div class="fourth-section">
-           <h3 class="sub-header-fourth">
+      <v-col lg="6" sm="12" md="6">
+          <div class="mt-16">
+            <h3 class="sub-header-fourth">
              Join our Customer Discovery Program to: 
            </h3>
            <p class="p-text-4">
@@ -167,23 +173,26 @@
                <input class="input-box" type="text" placeholder="First Name" required><br><br>
                <input class="input-box" type="text" placeholder="Last Name" required><br><br>
                <input class="input-box" type="email" placeholder="Email" required><br><br>
-
                <v-btn type="submit" class="mt-4 btn-2" depressed x-large>
                  Submit
                </v-btn>
              </form>
            </div>
-         </div>
-      </v-col>
-      <v-col>
-        <img
-          class="fourth-image" 
-          src="/image_005.png" 
-          alt="image"
-        />
+          </div>
+           
+        </v-col>
+        <v-col lg="6" sm="12" md="6">
+          <div class="fourth-img">
+            <img
+              class="fourth-image" 
+              src="/image_005.png" 
+              alt="image"
+            />
+          </div>
       </v-col>
     </v-row>
-      <v-row no-gutters dense class="fifth-section mr-10" :style="{backgroundImage :`url(${backgroundImg2})`}">
+    </div>
+      <v-row no-gutters dense class="fifth-section" :style="{backgroundImage :`url(${backgroundImg2})`}">
         <v-col>
           <div class="fifth-text-section" justify="center">
             <p class="p-text-5">
@@ -229,6 +238,9 @@ export default {
 }
 </script>
 <style scoped>
+.first-section{
+  max-width: 1440px;
+}
 .text-section{
   margin: 10rem 0 0 5rem;
 }
@@ -283,9 +295,6 @@ color: #FFFFFF !important;
 opacity: 0.8;
 background: #19B490 !important;
 border-radius: 16px;
-/* padding: 40px; */
-
-/* width: 405px; */
 
 }
 .flex-display{
@@ -295,17 +304,25 @@ border-radius: 16px;
   margin: 0 auto;
 
 }
+.header-img{
+  width: 100%;
+}
 .header-image{
-  width: 700px;
-  height: 922px;
+  width: 100%;
+  height: auto;
+  /* width: 700px;
+  height: 922px; */
 }
 .reversed{
-  width: 100%;
+  max-width: 1440px;
   margin-bottom: 10rem;
 }
+.left-img{
+  width: 100%;
+}
 .left-section-image{
-  width: 650px;
-  height: 650px;
+  width: 100%;
+  height: auto;
   border-radius: 0 50px 100px 0;
 }
 .second-section{
@@ -326,7 +343,7 @@ color: #38405C;
 }
 .bg{
   height: 1042px;
-  width: 1473px;
+  max-width: 1440px;
   position: relative;
   margin: 10em 0;
   /* background-image: require(url('/background.png')); */
@@ -389,7 +406,8 @@ color: #38405C;
   height: 380px;
 }
 .fourth-section{
-  margin: 10rem 0 0 5rem;
+  max-width: 1440px;
+  margin: 10rem 0 0 0;
 }
 .sub-header-fourth{
   font-family: Axiforma;
@@ -399,6 +417,7 @@ color: #38405C;
   line-height: 50px;
   color: #38405C;
   width: 435px;
+  margin-left: 5rem;
 }
 .p-text-4{
   font-family: Axiforma;
@@ -409,11 +428,17 @@ color: #38405C;
   color: #38405C;
   opacity: 0.6;
   width: 471px;
-  margin: 2rem 0 3rem 0;
+  margin: 2rem 0 3rem 5rem;
 }
+ .fourth-img{
+    width: 100%;
+  }
 .fourth-image{
-  width: 680px;
-  height: 922px;
+  width: 100%;
+  height: auto;
+}
+.form{
+  margin-left: 5rem;
 }
 .input-box{
   font-family: Axiforma;
@@ -432,11 +457,10 @@ color: #38405C;
   border-radius: 18px;
 }
 .fifth-section{
-  /* border: 1px solid red; */
+  max-width: 1440px;
   background-size: cover;
   height: 417px;
   width: 1240px; 
-  /* padding: 20rem 20rem; */
   margin: 10rem auto 0 auto;
   background-repeat: no-repeat;
 }
@@ -459,9 +483,8 @@ color: #38405C;
   font-size: 16px;
   color: #FFFFFF !important;
   opacity: 0.8;
-  /* width: 20%; */
+  text-transform: capitalize;
   margin: 0 auto;
-  /* margin: 0 45%; */
 }
 .bbtn{
   text-align: center;
@@ -472,67 +495,64 @@ color: #38405C;
 }
 
 /* Mobile screen Responsitivity */
-@media (max-width: 480px){
+@media (min-width: 340px) and (max-width: 960px){
   .text-section{
-    margin: 5rem 0 2rem 1rem;
+    margin: 5rem 0 2rem 2rem;
   }
   .header-text{
-    /* width: 260px; */
     font-size: 32px;
   }
   .orbit{
     position: absolute;
     top: 170px;
-    left: 150px; 
+    left: 160px; 
   }
   .orbit-image{
     width: 200px;
   }
   .paragraph{
     margin: 0 auto;
-    width: 350px; 
+    width: 100%;
   }
   .p-text{
     font-size: 18px;
-    width: 350px;
+    margin: 0 2rem;
   }
   .btn-1 {
-    margin: 2rem 0 0 1rem;
+    margin: 2rem 0 0 3rem;
   }
   .header-img{
     margin-top: 5rem;
-    padding: 0;
-    text-align: center;
   }
   .header-image{
-    margin-left: -55px;
-    width: 430px;
-    height: 600px;
+    width: 100%;
+    height: auto;
   }
+ 
   .grafiti{
-    margin: 0 0 0 2rem;
-    width: 370px;
+    width: 100%;
   }
   .second-section{
-    margin: 0 0 3rem 1rem;
+    margin-left: 20px;
   }
   .sub-heading-text{
     font-size: 30px;
-    width: 400px;
+    width: 80%;
   }
   .paragraph-2{
-    margin: 0 1rem 5rem 1rem;
-    width: 350px;
+    margin-left: -10px;
+    /* margin: 0 0 5rem 1rem; */
+    width: 100%;
+    
   }
   .left-section-image{
-    width: 380px;
+    width: 100%;
     height: auto;
     margin-top: 4rem;
   }
   .bg{
     margin: 0 auto;
     width: 100%;
-   
   }
   .third-section{
     position: absolute;
@@ -559,7 +579,7 @@ color: #38405C;
   .business-image{
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 40%;
   }
   .business{
     margin:  15rem 0 0 0;
@@ -569,17 +589,18 @@ color: #38405C;
     width: 100%;
   }
   .fourth-section{
-    margin: 6rem 0 0 0;
+    margin: 6rem 0;
   }
   .sub-header-fourth{
     font-size: 30px;
-    width: 400px;
-    margin: 0 0 0 1rem;
+    width: 100%;
+    text-align: center;
   }
   .p-text-4{
     font-size: 18px;
-    width: 350px;
-    margin: 2rem auto;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
   }
   .form{
     margin: 0 0 0 1rem;
@@ -593,17 +614,18 @@ color: #38405C;
     width: 100%;
     height: auto;
   }
+ 
   .fifth-section{
     padding: 60px;
-  background-size: cover;
-  height: auto;
-  width: 100%; 
-  margin: 10rem 0 0 0;
-  background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%; 
+    margin: 10rem 0 0 0;
+    background-repeat: no-repeat;
 }
   .p-text-5{
     font-size: 18px;
-    width: 276px;
+    width: 100%;
     margin: 50px auto 50px auto;
   }
   .eclipse{
@@ -612,7 +634,7 @@ color: #38405C;
   }
 }
 /* medium and larger screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media (min-width: 768px) and (max-width: 956px) {
    .text-section{
     margin: 5rem auto 2rem 2rem;
   }
@@ -669,8 +691,6 @@ color: #38405C;
 }
 .fourth-section{
   margin: 10rem auto;
- 
-  /* text-align: center; */
 }
 .sub-header-fourth{
   width: 90%;
@@ -693,7 +713,6 @@ color: #38405C;
 }
 .fifth-section{
   width: 100%; 
-  /* height: auto; */
 }
 .fifth-text-section{
   margin: 0 auto;
@@ -706,5 +725,5 @@ color: #38405C;
 }
 
 
-}
+} */
 </style>

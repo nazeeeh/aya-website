@@ -3,7 +3,7 @@
   <div>
     <v-row>
      <v-col lg="3" md="3" sm="12">
-      <div>
+      <div class="logo">
         <img
          class="footer-logo" 
          src="~/assets/Images/logo.svg" 
@@ -12,12 +12,12 @@
       </div>
      </v-col>
      <v-col lg="3" md="3" sm="12">
-      <div>
+      <div class="terms-txt">
         <p class="footer-text mt-10">Terms and Conditions</p>
       </div>
      </v-col>
      <v-col lg="3" md="3" sm="12">
-      <div>
+      <div class="privacy-txt">
         <p class="footer-text mt-10">Privacy Policy</p>
       </div>
      </v-col>
@@ -55,7 +55,7 @@
     background-color: #0080FA;
     /* max-width: 1440px; */
     /* width: 100%; */
-    height: 250px;
+    height: auto;
     padding: 4rem 5rem;
     margin-top: 5rem;
     width: 100%;
@@ -86,18 +86,28 @@
 }
 
 /* Mobile responsiveness */
-@media(max-width: 480px){
+@media (min-width: 340px) and (max-width: 960px){
   .footer{
+      border: 1px solid red;
       text-align: center;
       height: auto;
       width: 100%;
       padding: 0;
   }
-  .footer-logo{
-      margin: 0 0 0 1rem;
+  .logo{
+      margin: 3rem 0 0 0;
+      width: 30%;
   }
+  .terms-txt{
+      width: 38%;
+  }
+  .privacy-txt{
+      width: 30%;
+  }
+  
   .footer-icons{
-      margin: 0 1rem;
+      width: 50%;
+      margin: 0 6rem;
   }
   .rights-reserve{
       margin: 0 auto;
@@ -105,7 +115,7 @@
 }
 
 /* medium and larger screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media (min-width: 768px) and (max-width: 1024px) {
     .footer{
       text-align: center;
       height: auto;
@@ -115,6 +125,6 @@
     margin: 0 0 0 0;
   }
 
-}
+} */
 
 </style>
