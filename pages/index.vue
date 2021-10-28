@@ -567,8 +567,8 @@ color: #38405C;
     left: 25%;
   }
   .freelancers{
-     width: 50%;
-     margin: 13rem 0 0 12rem;
+     /* width: 50%; */
+     margin: 15rem 0 0 0;
   }
   .sub-fourth{
     width: 100%;
@@ -591,13 +591,14 @@ color: #38405C;
     left: 20%;
   }
   .business{
-    padding: 40px;
+
+    line-height: 0;
+    margin-left: 0;
    
-    margin:  15rem 10rem;
   }
   .access{
     font-size: 14px;
-    width: 100%;
+  
   }
   .fourth-section{
     margin: 6rem 0;
