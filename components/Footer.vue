@@ -86,9 +86,13 @@
 }
 
 /* Mobile responsiveness */
+@media (max-width: 360px){
+    /* .footer{
+        width: 100%;
+    } */
+}
 @media (min-width: 340px) and (max-width: 960px){
   .footer{
-      border: 1px solid red;
       text-align: center;
       height: auto;
       width: 100%;

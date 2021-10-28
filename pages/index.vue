@@ -103,7 +103,7 @@
     
     <div class="bg mt-8" :style="{backgroundImage: `url(${backgroundImg})`}">
       <v-row>
-        <v-col>
+        <v-col lg="6" md="6" sm="12">
           <div class="third-section">
             <img 
             class="image-form"
@@ -129,7 +129,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col>
+        <v-col lg="6" md="6" sm="12">
           <div class="business">
             <h3 class="sub-head-text">
               Businesses:
@@ -160,7 +160,7 @@
     <div class="fourth-section">
     <v-row>
       <v-col lg="6" sm="12" md="6">
-          <div class="mt-16">
+          <div class="mt-16 sub-fourth">
             <h3 class="sub-header-fourth">
              Join our Customer Discovery Program to: 
            </h3>
@@ -201,7 +201,7 @@
               Missed the button above by chance? Well lucky you, we’ve got another here. 
             </p>
             <div class="bbtn">
-               <v-btn class="btn-3" depressed x-large>Get access</v-btn>
+               <v-btn @click.prevent="toggle"  class="btn-3" depressed x-large>Get access</v-btn>
             </div>
           </div>
         </v-col>
@@ -283,7 +283,6 @@ export default {
   text-align: center;
   opacity: 0.8;
   border-radius: 10px;
-  /* transform: matrix(0.76, -0.57, 0.73, 0.77, 0, 0); */
 }
 .modalBtn{
 font-family: Axiforma;
@@ -495,6 +494,13 @@ color: #38405C;
 }
 
 /* Mobile screen Responsitivity */
+@media (max-width: 360px){
+    .business-image{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+  }
+}
 @media (min-width: 340px) and (max-width: 960px){
   .text-section{
     margin: 5rem 0 2rem 2rem;
@@ -558,15 +564,18 @@ color: #38405C;
     position: absolute;
     width: 20%;
     top: -7%;
-    left: 5%;
+    left: 25%;
   }
   .freelancers{
-    margin: 15rem 0 0 -200px;
-    /* width: 100%; */
+     width: 50%;
+     margin: 13rem 0 0 12rem;
+  }
+  .sub-fourth{
+    width: 100%;
   }
   .sub-head-text{
     font-size: 20px;
-    width: 100%;
+    /* width: 100%; */
   }
   .showcase{
     font-size: 14px;
@@ -579,10 +588,12 @@ color: #38405C;
   .business-image{
     position: absolute;
     top: 45%;
-    left: 40%;
+    left: 20%;
   }
   .business{
-    margin:  15rem 0 0 0;
+    padding: 40px;
+   
+    margin:  15rem 10rem;
   }
   .access{
     font-size: 14px;
@@ -594,6 +605,7 @@ color: #38405C;
   .sub-header-fourth{
     font-size: 30px;
     width: 100%;
+    margin: 0 0;
     text-align: center;
   }
   .p-text-4{
@@ -611,7 +623,7 @@ color: #38405C;
   }
   .fourth-image{
     margin-top: 5rem;
-    width: 100%;
+    width: 370px;
     height: auto;
   }
  
