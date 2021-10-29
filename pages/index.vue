@@ -30,7 +30,6 @@
            class="dialogBox"
            max-width="800px"
            
-           
           >
           <div class="flex-display">
             <v-card class="" width="350px" hover href="https://docs.google.com/forms/d/19N1-kEHlW3RnoDhO3bhSd79vTNPIcjhi75CJoV4uYPU/edit">
@@ -43,7 +42,7 @@
            <v-card class="ml-10" width="350px" hover href="https://docs.google.com/forms/d/1KvT71tGW38it46IS7GqfZn6JRbCW90uV8KMbSpoOYCA/edit">
             <v-card-text class=" modalBtn">
               Join our Talent Pool showcase your 
-                skillsand get matched to companies.
+                skills and get matched to companies.
             </v-card-text>
           </v-card>
           </div>
@@ -112,7 +111,7 @@
           />
           </div>
         </v-col>
-        <v-col>
+        <v-col lg="6" md="6" sm="12">
           <div class="freelancers">
             <h3 class="sub-head-text">
               Freelancers:
@@ -140,12 +139,12 @@
                borderless peer-to-peer cryptocurrency payments with 100% 
                Security guaranteed.
             </p>
-            <v-btn class="btn-2" depressed x-large>
+            <v-btn class="btn-2 btn-2-2" depressed x-large>
               Fill Our Talent Requirement Form
             </v-btn>
           </div>
         </v-col>
-        <v-col>
+        <v-col lg="6" md="6" sm="12">
           <div class="business-image">
             <img 
              class="business-img"
@@ -345,7 +344,6 @@ color: #38405C;
   max-width: 1440px;
   position: relative;
   margin: 10em 0;
-  /* background-image: require(url('/background.png')); */
 }
 .third-section{
   position: absolute;
@@ -354,8 +352,8 @@ color: #38405C;
   left: 18%;
 }
 .image-form{
-  height: 370px;
-  width: 290px;
+  height: auto;
+  width: 100%;
   /* position: absolute; */
 }
 .freelancers{
@@ -494,24 +492,28 @@ color: #38405C;
 }
 
 /* Mobile screen Responsitivity */
-@media (max-width: 360px){
-    .business-image{
-    position: absolute;
-    top: 45%;
-    left: 20%;
+/* @media (max-width: 340px){
+    .orbit{
+      position: absolute;
+      top: 250px;
+      left: 0; 
+    
   }
-}
+} */
 @media (min-width: 340px) and (max-width: 960px){
   .text-section{
-    margin: 5rem 0 2rem 2rem;
+    margin: 5rem 0 2rem 0;
+    width: 100%;
   }
   .header-text{
     font-size: 32px;
+    width: 60%;
+    margin: 0 2rem;
   }
   .orbit{
     position: absolute;
-    top: 170px;
-    left: 160px; 
+    top: 250px;
+    left: 0; 
   }
   .orbit-image{
     width: 200px;
@@ -536,7 +538,8 @@ color: #38405C;
   }
  
   .grafiti{
-    width: 100%;
+    width: 90%;
+
   }
   .second-section{
     margin-left: 20px;
@@ -547,7 +550,6 @@ color: #38405C;
   }
   .paragraph-2{
     margin-left: -10px;
-    /* margin: 0 0 5rem 1rem; */
     width: 100%;
     
   }
@@ -562,17 +564,25 @@ color: #38405C;
   }
   .third-section{
     position: absolute;
-    width: 20%;
-    top: -7%;
-    left: 25%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: -5rem;
+    text-align: center;
+  }
+  .image-form{
+    width: 200px;
   }
   .freelancers{
-     /* width: 50%; */
-     margin: 15rem 0 0 0;
+    margin: 10rem 3rem 0 3rem;
+  }
+  .btn-2-2{
+    width: 100%;
   }
   .sub-fourth{
     width: 100%;
   }
+
   .sub-head-text{
     font-size: 20px;
     /* width: 100%; */
@@ -587,18 +597,23 @@ color: #38405C;
   }
   .business-image{
     position: absolute;
-    top: 45%;
-    left: 20%;
+    top: 43%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .business-img{
+    width: 230px;
+    height: auto;
   }
   .business{
-
-    line-height: 0;
-    margin-left: 0;
-   
+    margin: 15rem auto 0 auto;
   }
+
   .access{
     font-size: 14px;
-  
+    width: 100%;
+    margin: 1rem 0;
   }
   .fourth-section{
     margin: 6rem 0;
@@ -624,7 +639,7 @@ color: #38405C;
   }
   .fourth-image{
     margin-top: 5rem;
-    width: 370px;
+    width: 335px;
     height: auto;
   }
  
@@ -736,7 +751,6 @@ color: #38405C;
   width: 100%;
   margin: 80px auto;
 }
-
 
 } */
 </style>

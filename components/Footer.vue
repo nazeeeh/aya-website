@@ -2,7 +2,7 @@
  <div class="footer">
   <div>
     <v-row>
-     <v-col lg="3" md="3" sm="12">
+     <v-col lg="3" md="12" sm="12">
       <div class="logo">
         <img
          class="footer-logo" 
@@ -11,17 +11,17 @@
         />
       </div>
      </v-col>
-     <v-col lg="3" md="3" sm="12">
+     <v-col lg="3" md="12" sm="12">
       <div class="terms-txt">
         <p class="footer-text mt-10">Terms and Conditions</p>
       </div>
      </v-col>
-     <v-col lg="3" md="3" sm="12">
+     <v-col lg="3" md="12" sm="12">
       <div class="privacy-txt">
         <p class="footer-text mt-10">Privacy Policy</p>
       </div>
      </v-col>
-     <v-col lg="3" md="3" sm="12">
+     <v-col lg="3" md="12" sm="12">
          <div class="footer-icons mt-4">
              <a href="https://twitter.com/ayagigs">
                 <img src="~/assets/Images/Twitter.png" alt="icon">
@@ -100,18 +100,18 @@
   }
   .logo{
       margin: 3rem 0 0 0;
-      width: 30%;
+      width: 100%;
+   
   }
   .terms-txt{
-      width: 38%;
+      width: 100%;
   }
   .privacy-txt{
-      width: 30%;
+      width: 100%;
   }
   
   .footer-icons{
-      width: 50%;
-      margin: 0 6rem;
+      width: 100%; 
   }
   .rights-reserve{
       margin: 0 auto;
