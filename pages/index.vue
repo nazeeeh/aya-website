@@ -686,7 +686,8 @@ color: #38405C;
   }
   .business-text-div{
     width: 70%;
-    margin: 0 auto;
+    margin-left: 5rem;
+    /* margin: 0 auto; */
   }
 
   .access{
