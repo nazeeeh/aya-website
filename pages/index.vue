@@ -142,9 +142,12 @@
                Security guaranteed.
             </p>
             </div>
-            <v-btn class="btn-2 btn-2-2" href="https://docs.google.com/forms/d/1KvT71tGW38it46IS7GqfZn6JRbCW90uV8KMbSpoOYCA/edit" depressed x-large>
+            <div class="btn-2-div">
+              <v-btn class="btn-2 btn-2-2" href="https://docs.google.com/forms/d/1KvT71tGW38it46IS7GqfZn6JRbCW90uV8KMbSpoOYCA/edit" depressed x-large>
               Fill Our Talent Requirement Form
             </v-btn>
+            </div>
+            
           </div>
         </v-col>
         <v-col lg="6" md="6" sm="12">
@@ -694,6 +697,9 @@ color: #38405C;
     font-size: 14px;
     width: 100%;
     margin: 1rem 0;
+  }
+  .btn-2-div{
+    text-align: center;
   }
   .fourth-section{
     margin: 6rem 0;
