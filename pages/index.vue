@@ -121,7 +121,7 @@
               matched with both local and international 
               companies and get paid, all hassle-free.
             </p>
-            <v-btn class="btn-2" depressed x-large>
+            <v-btn class="btn-2" href="https://docs.google.com/forms/d/19N1-kEHlW3RnoDhO3bhSd79vTNPIcjhi75CJoV4uYPU/edit" depressed x-large>
               Fill Our Talent Form
             </v-btn>
           </div>
@@ -139,7 +139,7 @@
                borderless peer-to-peer cryptocurrency payments with 100% 
                Security guaranteed.
             </p>
-            <v-btn class="btn-2 btn-2-2" depressed x-large>
+            <v-btn class="btn-2 btn-2-2" href="https://docs.google.com/forms/d/1KvT71tGW38it46IS7GqfZn6JRbCW90uV8KMbSpoOYCA/edit" depressed x-large>
               Fill Our Talent Requirement Form
             </v-btn>
           </div>
@@ -208,6 +208,59 @@
       <div>
         <img class="eclipse" src="/eclipse.svg" alt="image">
       </div>
+      <div class="partnerships">
+        <v-row>
+          <v-col>
+            <div>
+              <p class="partnership-header">
+                Proudly Supported <br> by:
+              </p>
+            </div>
+            <marquee 
+              direction="left"
+              behavior= "scroll">
+            <div class="p-grid">
+              
+              <div class="partners-logo">
+              <img 
+              class="logos"
+              src="~/assets/Images/partner_001.png" 
+              alt="partners"
+            >
+            </div>
+            <div class="partners-logo">
+              <img 
+              class="logos"
+              src="~/assets/Images/partner_002.png" 
+              alt="partners"
+            >
+            </div>
+            <div class="partners-logo">
+              <img 
+              class="logos"
+              src="~/assets/Images/partner_004.png" 
+              alt="partners"
+            >
+            </div>
+            <div class="partners-logo">
+              <img 
+              class="logos"
+              src="~/assets/Images/partner_003.png" 
+              alt="partners"
+            >
+            </div>
+            <div class="partners-logo">
+              <img 
+              class="logos"
+              src="~/assets/Images/partner_005.png" 
+              alt="partners"
+            >
+            </div>
+            </div>
+             </marquee>
+          </v-col>
+        </v-row>
+      </div>
       <Footer />
   </div>
 </template>
@@ -254,7 +307,7 @@ export default {
 }
 .orbit{
   position: absolute;
-  top: 220px;
+  top: 240px;
   left: 290px
 }
 .paragraph{
@@ -271,7 +324,7 @@ export default {
   opacity: 0.6;
 }
 .btn-1 {
-  margin: 2rem 0 0 5rem;
+  margin: 2rem 0 0 5.5rem;
   color: #fff !important;
   background-color: #3BD6B2 !important;
   font-family: Axiforma;
@@ -300,7 +353,6 @@ border-radius: 16px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-
 }
 .header-img{
   width: 100%;
@@ -308,8 +360,6 @@ border-radius: 16px;
 .header-image{
   width: 100%;
   height: auto;
-  /* width: 700px;
-  height: 922px; */
 }
 .reversed{
   max-width: 1440px;
@@ -343,7 +393,7 @@ color: #38405C;
   height: 1042px;
   max-width: 1440px;
   position: relative;
-  margin: 10em 0;
+  /* margin: 5rem 0; */
 }
 .third-section{
   position: absolute;
@@ -390,7 +440,7 @@ color: #38405C;
     /* transform: matrix(0.76, -0.57, 0.73, 0.77, 0, 0); */
 }
 .business{
-  margin:  10rem 0 0 15rem;
+  margin:  6rem 0 0 15rem;
 }
 .business-image{
   width: 20%;
@@ -402,9 +452,12 @@ color: #38405C;
   width: 284px;
   height: 380px;
 }
+.access{
+  width: 100%;
+}
 .fourth-section{
   max-width: 1440px;
-  margin: 10rem 0 0 0;
+  margin: 8rem 0 0 0;
 }
 .sub-header-fourth{
   font-family: Axiforma;
@@ -458,7 +511,7 @@ color: #38405C;
   background-size: cover;
   height: 417px;
   width: 1240px; 
-  margin: 10rem auto 0 auto;
+  margin: 8rem auto 0 auto;
   background-repeat: no-repeat;
 }
 .p-text-5{
@@ -489,6 +542,23 @@ color: #38405C;
 .eclipse{
   margin: 2rem 0 0 15rem;
   width: 20px;
+}
+.partnerships{
+  padding: 40px 60px 0 60px;
+}
+.p-grid{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.partnership-header{
+  font-family: Axiforma;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 50px;
+  color: #38405C;
+  margin-left: 1rem;
 }
 
 /* Mobile screen Responsitivity */

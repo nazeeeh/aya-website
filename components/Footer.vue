@@ -9,6 +9,7 @@
          src="~/assets/Images/logo.svg" 
          alt="logo"
         />
+        <p class="tagline">live borderless</p>
       </div>
      </v-col>
      <v-col lg="3" md="12" sm="12">
@@ -44,7 +45,7 @@
   </div>
   <div>
     <p class="rights-reserve mt-8">
-      © Aya 2021. All Rights Reserved. 
+      © Aya 2021. 
     </p>
   </div>
     
@@ -53,11 +54,9 @@
 <style scoped>
 .footer{
     background-color: #0080FA;
-    /* max-width: 1440px; */
-    /* width: 100%; */
     height: auto;
     padding: 4rem 5rem;
-    margin-top: 5rem;
+    height: 250px;
     width: 100%;
 }
 .footer-text{
@@ -83,6 +82,15 @@
     font-size: 14px;
     text-align: center;
     color: #FFFFFF;
+}
+.tagline{
+  text-transform: uppercase;
+   font-family: Axiforma;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
 }
 
 /* Mobile responsiveness */
