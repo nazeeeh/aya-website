@@ -121,7 +121,9 @@
               matched with both local and international 
               companies and get paid, all hassle-free.
             </p>
-            <v-btn class="btn-2" href="https://docs.google.com/forms/d/19N1-kEHlW3RnoDhO3bhSd79vTNPIcjhi75CJoV4uYPU/edit" depressed x-large>
+            <v-btn class="btn-2" 
+            href="https://docs.google.com/forms/d/1KvT71tGW38it46IS7GqfZn6JRbCW90uV8KMbSpoOYCA/edit"
+            depressed x-large>
               Fill Our Talent Form
             </v-btn>
           </div>
@@ -143,7 +145,9 @@
             </p>
             </div>
             <div class="btn-2-div">
-              <v-btn class="btn-2 btn-2-2" href="https://docs.google.com/forms/d/1KvT71tGW38it46IS7GqfZn6JRbCW90uV8KMbSpoOYCA/edit" depressed x-large>
+              <v-btn class="btn-2 btn-2-2"
+              href="https://docs.google.com/forms/d/19N1-kEHlW3RnoDhO3bhSd79vTNPIcjhi75CJoV4uYPU/edit"  
+              depressed x-large>
               Fill Our Talent Requirement Form
             </v-btn>
             </div>
@@ -646,13 +650,13 @@ color: #38405C;
     top: 0;
     left: 0;
     margin-top: -5rem;
-    text-align: center;
+    /* text-align: center; */
   }
   .image-form{
     width: 200px;
   }
   .freelancers{
-    margin: 10rem 3rem 0 3rem;
+    margin: 10rem 0 0 -11rem;
   }
   .btn-2-2{
     width: 100%;
@@ -678,21 +682,17 @@ color: #38405C;
     top: 43%;
     left: 0;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
   .business-img{
     width: 230px;
     height: auto;
+    margin-left: -2rem;
   }
   .business{
     margin: 15rem auto 0 auto;
+    width: 88%;
   }
-  .business-text-div{
-    width: 70%;
-    margin-left: 5rem;
-    /* margin: 0 auto; */
-  }
-
   .access{
     font-size: 14px;
     width: 100%;
