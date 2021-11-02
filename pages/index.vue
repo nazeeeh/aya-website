@@ -130,15 +130,18 @@
       <v-row>
         <v-col lg="6" md="6" sm="12">
           <div class="business">
+            <div class="business-text-div">
             <h3 class="sub-head-text">
               Businesses:
             </h3>
-            <p class="p-text-3 access">
+            
+              <p class="p-text-3 access">
               Access the best and largest pool of African freelancers 
               to take your business to the next level, enjoy instant and
                borderless peer-to-peer cryptocurrency payments with 100% 
                Security guaranteed.
             </p>
+            </div>
             <v-btn class="btn-2 btn-2-2" href="https://docs.google.com/forms/d/1KvT71tGW38it46IS7GqfZn6JRbCW90uV8KMbSpoOYCA/edit" depressed x-large>
               Fill Our Talent Requirement Form
             </v-btn>
@@ -304,6 +307,7 @@ export default {
   line-height: 65px;
   letter-spacing: 0.5px;
   color: #38405C;
+  z-index: 100;
 }
 .orbit{
   position: absolute;
@@ -579,10 +583,11 @@ color: #38405C;
     font-size: 32px;
     width: 60%;
     margin: 0 2rem;
+    z-index: 1;
   }
   .orbit{
     position: absolute;
-    top: 250px;
+    top: 260px;
     left: 0; 
   }
   .orbit-image{
@@ -679,6 +684,10 @@ color: #38405C;
   .business{
     margin: 15rem auto 0 auto;
   }
+  .business-text-div{
+    width: 70%;
+    margin: 0 auto;
+  }
 
   .access{
     font-size: 14px;
@@ -729,6 +738,10 @@ color: #38405C;
   .eclipse{
     width: 20px;
     margin: 5rem 0 5rem 3rem;
+  }
+  .partnerships{
+    text-align: center;
+    padding: 0;
   }
 }
 /* medium and larger screens */

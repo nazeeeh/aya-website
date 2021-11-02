@@ -85,7 +85,7 @@
 }
 .tagline{
   text-transform: uppercase;
-   font-family: Axiforma;
+  font-family: Axiforma;
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
@@ -111,6 +111,7 @@
       width: 100%;
    
   }
+
   .terms-txt{
       width: 100%;
   }

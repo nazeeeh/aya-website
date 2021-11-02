@@ -29,7 +29,9 @@
   .ayalogo{
     margin: 3rem 0 0 2rem;
   }
-  
+  .tagline{
+    margin-left: 2rem;
+  }
 }
 /* medium and larger screens */
 /* @media (min-width: 768px) and (max-width: 1024px) {
