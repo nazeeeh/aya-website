@@ -645,6 +645,7 @@ color: #38405C;
   .bg{
     margin: 0 auto;
     width: 100%;
+    height: 1049px;
   }
   .third-section{
     position: absolute;
@@ -681,7 +682,7 @@ color: #38405C;
   }
   .business-image{
     position: absolute;
-    top: 43%;
+    top: 26%;
     left: 0;
     width: 100%;
     /* text-align: center; */
