@@ -401,7 +401,7 @@ color: #38405C;
   margin: 0 0 0 3rem;
 }
 .bg{
-  height: 1042px;
+  height: 780px;
   max-width: 1440px;
   position: relative;
   /* margin: 5rem 0; */
@@ -454,9 +454,11 @@ color: #38405C;
   margin:  6rem 0 0 15rem;
 }
 .business-image{
-  width: 20%;
+  /* width: 20%;
   position: absolute;
-  top: 75%;
+  top: 75%; */
+  margin-top: 8rem;
+  margin-left: 2rem;
 
 }
 .business-img{

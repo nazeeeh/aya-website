@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - aya',
+    titleTemplate: '%s - Live Borderless',
     title: 'aya',
     htmlAttrs: {
       lang: 'en'
@@ -15,11 +15,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Live Borderless' },
+      { name: 'format-detection', content: 'telephone=no' },
+      {property:"og:image", content:"https://www.ayagigs.com/assets/images/logo.svg"}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {rel: 'icon', type: "image/svg", href: "https://www.ayagigs.com/assets/images/logo.svg"},
       {rel:"icon", type:"image/png", sizes:"32x32", href:"/favicon-32x32.png"},
       {rel:"icon", type:"image/png", sizes:"96x96", href:"/favicon-96x96.png"},
       {rel:"icon", type:"image/png", sizes:"16x16", href:"/favicon-16x16.png"},
